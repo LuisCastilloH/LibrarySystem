@@ -10,7 +10,9 @@
  *  TODO...
  *
  */
-#include "../lib/utils.h"
+#include "lib/utils.h"
+#include "lib/Material.h"
+#include "lib/Disc.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -20,6 +22,7 @@
 int main(int argc, char *argv[]) {
     int opt;
     int verbose = 0;
+    Disc dic1;
 
     while ((opt = getopt(argc, argv, "hn:v")) != EOF) { //EOF is -1
         switch(opt) {
