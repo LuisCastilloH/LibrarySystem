@@ -1,9 +1,7 @@
-#pragma once
-
 #include <iostream>
 #include <string>
 
-#include "Disc.h"
+#include "../include/Disc.h"
 
 // constructors
 Disc::Disc(int id, std::string title, int length, std::string genre) : Material(id, title)

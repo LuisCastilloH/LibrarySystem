@@ -10,9 +10,9 @@
  *  TODO...
  *
  */
-#include "lib/utils.h"
-#include "lib/Material.h"
-#include "lib/Disc.h"
+#include "../include/utils.h"
+#include "../include/Material.h"
+#include "../include/Disc.h"
 
 #include <cstdio>
 #include <cstdlib>
@@ -24,13 +24,14 @@ int main(int argc, char *argv[]) {
     int verbose = 0;
     Disc dic1;
 
+    std::cout << "Entrando..." << std::endl;
     while ((opt = getopt(argc, argv, "hn:v")) != EOF) { //EOF is -1
         switch(opt) {
             case 'h':
                 usage(basename(argv[0]), opt);
                 break;
             case 'n':
-                printf("Welcome to the LibrarySystem program %s\n", optarg);
+                std::cout << "Welcome to the LibrarySystem program " << optarg;
                 break;
             case 'v':
                 verbose = 1;

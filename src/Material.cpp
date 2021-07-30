@@ -1,7 +1,7 @@
-#pragma once
-
 #include <iostream>
 #include <string>
+
+#include "../include/Material.h"
 
 // constructors
 Material::Material(int id, std::string title)
@@ -17,23 +17,23 @@ Material::Material()
 }
 
 // setters
-void setIdMaterial(int id)
+void Material::setIdMaterial(int id)
 {
     this->idMaterial = id;
 }
 
-void setTitle(std::string title)
+void Material::setTitle(std::string title)
 {
     this->title = title;
 }
 
 // getters
-int getIdMaterial()
+int Material::getIdMaterial()
 {
-    return idMaterial;
+    return this->idMaterial;
 }
 
-std::string getTitle()
+std::string Material::getTitle()
 {
-    return title;
+    return this->title;
 }

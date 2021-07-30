@@ -13,7 +13,6 @@ class Disc : public Material {
         // constructors
         Disc(int, std::string, int, std::string);
         Disc();
-        ~Disc();
         // setters
         void setLength(int);
         void setGenre(std::string);
